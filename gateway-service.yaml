@@ -47,3 +47,7 @@ spring:
           uri: lb://bonos-aplicados-service
           predicates:
             - Path=/api/v1/bonoAplicado/**
+        - id: reportes-service
+          uri: lb://reportes-service
+          predicates:
+            - Path=/api/v1/reportes/**
